@@ -1,11 +1,26 @@
-package com.lucascmorais.vendas.entity;
+package com.github.lucascmorais.vendas.entity;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "produto")
 public class Produto {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
+	
+	@Column(name = "descricao")
     private String descricao;
+	
+	@Column(name = "preco")
     private BigDecimal preco;
     
 	public Integer getId() {

@@ -11,7 +11,7 @@
 		<relativePath/>
 	</parent>
 	
-	<groupId>com.lucascmorais</groupId>
+	<groupId>com.github.lucascmorais</groupId>
 	<artifactId>vendas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
